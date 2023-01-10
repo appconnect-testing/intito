@@ -15,6 +15,6 @@ RUN git clone https://github.com/audun-h-butenschon/randomly_testing_streamlit_d
 
 RUN pip3 install -r requirements.txt
 
-COPY test_cev.csv .
+#COPY test_cev.csv .
 
 ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8508", "--server.address=0.0.0.0"]
