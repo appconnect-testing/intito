@@ -1,6 +1,5 @@
 FROM python:3.9-slim
 
-EXPOSE 8508
 
 WORKDIR /app
 
@@ -17,4 +16,4 @@ RUN pip3 install -r requirements.txt
 
 #COPY test_cev.csv .
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8508", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "app.py",  "--server.address=0.0.0.0"]
